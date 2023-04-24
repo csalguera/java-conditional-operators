@@ -105,5 +105,36 @@ public class App {
     if (!hasPrerequisites) {
       System.out.println("Must complete prerequisite course!");
     }
+
+    /*
+     * -------------------------------
+     * Combining Conditional Operators
+     * -------------------------------
+     * 
+     * We have the ability to expand our boolean expressions by using multiple conditional operators in a single expression.
+     * 
+     * For example:
+     */
+
+    boolean foo = true && !(false || !true);
+
+    /*
+     * The order of evaluation when it comes to conditional operators is as follows:
+     * 
+     * 1. Parentheses
+     * 2. NOT - !
+     * 3. AND - &&
+     * 4. OR - ||
+     */
+    
+    foo = true && !(false || !true);
+    //* !true = false
+    foo = true && !(false || false);
+    //* false || false = false
+    foo = true && !false;
+    //* !false = true
+    foo = true && true;
+    //* true && true = true
+    foo = true;
   }
 }

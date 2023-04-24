@@ -215,3 +215,30 @@ public class Reservation {
     If their reservation is **not** confirmed, write `"Unable to confirm reservation, please contact restaurant"`.
 
     Else write: `"Please enjoy your meal!"`
+
+## Combining Conditional Operators
+
+```
+public class Operators {
+  public static void main(String[] args) {
+    int a = 6;
+    int b = 3;
+
+    boolean ex1 = !(a == 7 && (b >= a || a != a));
+    // System.out.println(ex1);
+
+    boolean ex2 = a == b || !(b > 3);
+    // System.out.println(ex2);
+
+    boolean ex3 = !(b <= a && b != a + b);
+    // System.out.println(ex3); 
+
+  }
+}
+```
+
+Take a look at the three expressions in Operators.java.
+
+Using your understanding of the order of execution, find out whether the value of each expression is true or false.
+
+When you’re ready, uncomment the print statements to find out if you are right.
