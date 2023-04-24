@@ -5,6 +5,9 @@ public class Reservation {
   boolean isConfirmed;
   
   public Reservation(int count, int capacity, boolean open) {
+    // Write conditional statement below
+    
+    
     guestCount = count;
 		restaurantCapacity = capacity;
 		isRestaurantOpen = open;
@@ -16,7 +19,7 @@ public class Reservation {
       isConfirmed = true;
     } else {
       System.out.println("Reservation denied");
-      isConfirmed = false;
+			isConfirmed = false;
     }
   }
   

@@ -30,16 +30,47 @@ public class App {
     boolean tuitionPaid = true;
     boolean hasPrerequisites = true;
 
-    // nested if statements
+    // nested if statements:
     if (tuitionPaid) {
       if (hasPrerequisites) {
         // enroll student
       }
     }
 
-    // AND operator
+    // AND operator:
     if (tuitionPaid && hasPrerequisites) {
       // enroll student
+    }
+
+    /*
+     * ------------------
+     * Conditional-OR: ||
+     * ------------------
+     * 
+     * The requirements of our enrollment program have changed again
+     * 
+     * Certain courses have prerequisites that are satisfied by multiple courses
+     * 
+     * As long as students have taken at least one prerequisite, they should be allowed to enroll
+     * 
+     * Here are two way to write the code:
+     */
+
+    boolean hasAlgebraPrerequisite = true;
+    boolean hasGeometryPrerequisite = true;
+
+    // separate if statements:
+    if (hasAlgebraPrerequisite) {
+      // Enroll in course
+    }
+
+    if (hasGeometryPrerequisite) {
+      // Enroll in course
+    }
+
+    // OR operator:
+    if (hasAlgebraPrerequisite || hasGeometryPrerequisite) {
+      // Enroll student
     }
   }
 }
