@@ -11,19 +11,13 @@ public class Reservation {
   }  
   
   public void confirmReservation() {
-    /* 
-     * Write conditional
-     * ~~~~~~~~~~~~~~~~~
-     * if restaurantCapacity is greater
-     * or equal to guestCount
-     * AND
-     * the restaurant is open:
-     * print "Reservation confirmed"
-     * set isConfirmed to true
-     * else:
-     * print "Reservation denied"
-     * set isConfirmed to false
-     */
+    if (restaurantCapacity >= guestCount && isRestaurantOpen) {
+      System.out.println("Reservation confirmed");
+      isConfirmed = true;
+    } else {
+      System.out.println("Reservation denied");
+      isConfirmed = false;
+    }
   }
   
   public void informUser() {
