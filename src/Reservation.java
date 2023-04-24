@@ -8,7 +8,6 @@ public class Reservation {
     if (count < 1 || count > 8) {
       System.out.println("Invalid reservation!");
     }
-    
     guestCount = count;
 		restaurantCapacity = capacity;
 		isRestaurantOpen = open;
@@ -25,7 +24,8 @@ public class Reservation {
   }
   
   public void informUser() {
-    System.out.println("Please enjoy your meal!");
+    // Write conditional here
+
   }
   
   public static void main(String[] args) {

@@ -72,5 +72,38 @@ public class App {
     if (hasAlgebraPrerequisite || hasGeometryPrerequisite) {
       // Enroll student
     }
+
+    /*
+     * --------------
+     * Logical NOT: !
+     * --------------
+     * 
+     * The unary operator NOT, !, works on a single value
+     * 
+     * This operator evaluates to the opposite boolean to which it's applied
+     * 
+     * NOT is useful for expressin our intent clearly in programs
+     * 
+     * For example, sometimes we need the opposite behavior of an if-then: run a code block only if the condition is false
+     */
+
+    hasPrerequisites = false;
+
+    // if-then-else
+    if (hasPrerequisites) {
+      // do nothing
+    } else {
+      System.out.println("Must complete prerequisite course!");
+    }
+
+    /*
+     * This code block works as intended but the truthy statement is completely void of code
+     * The logical NOT operator helps clean up our code
+     */
+
+    // if-then
+    if (!hasPrerequisites) {
+      System.out.println("Must complete prerequisite course!");
+    }
   }
 }
