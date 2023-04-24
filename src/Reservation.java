@@ -24,8 +24,11 @@ public class Reservation {
   }
   
   public void informUser() {
-    // Write conditional here
-
+    if (!isConfirmed) {
+      System.out.println("Unable to confirm reservation, please contact restaurant.");
+    } else {
+      System.out.println("Please enjoy your meal!");
+    }
   }
   
   public static void main(String[] args) {
