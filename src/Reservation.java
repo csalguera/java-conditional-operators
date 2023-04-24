@@ -1,8 +1,3 @@
-## Conditional Operators
-
-## Introduction
-
-```
 public class Reservation {
   int guestCount;
   int restaurantCapacity;
@@ -45,10 +40,3 @@ public class Reservation {
     partyOfFour.informUser();
   }
 }
-```
-
-The text editor contains a `Reservation` class we’ll build in this lesson.
-
-Note the different conditional statements and operators that we’re using to control the execution of the program.
-
-Move on when you’re ready!
