@@ -136,5 +136,11 @@ public class App {
     foo = true && true;
     //* true && true = true
     foo = true;
+
+    /*
+     * ------
+     * Review
+     * ------
+     */
   }
 }
